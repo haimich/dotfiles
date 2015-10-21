@@ -6,6 +6,12 @@
   co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pu = !git pull --rebase && git push
+  pull = pull --rebase
   unstage = reset HEAD
   uncommit = reset --soft HEAD^
   unchange = checkout HEAD
+[user]
+	email = haimich@gmx.net
+	name = Michael Müller
+[push]
+	default = simple
